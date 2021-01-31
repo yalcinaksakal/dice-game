@@ -16,7 +16,7 @@ body {
   font-weight: 400;
   height: 100vh;
   color: #333;
-  background-image: linear-gradient(to top left, #5c90e9 0%, #e7f1e7 100%);
+  background-image: linear-gradient(to top left, #9dbbf0 0%, #e7f1e7 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,12 +25,12 @@ body {
 /* LAYOUT */
 main {
   position: relative;
-  width: 100rem;
-  height: 60rem;
+  width: 85vw;
+  height: 80vh;
   background-color: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(200px);
   filter: blur();
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 3vh 5vh rgba(0, 0, 0, 0.25);
   border-radius: 9px;
   overflow: hidden;
   display: flex;
@@ -38,7 +38,7 @@ main {
 
 .player {
   flex: 50%;
-  padding: 9rem;
+  padding: 9vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,16 +48,16 @@ main {
 /* ELEMENTS */
 .name {
   position: relative;
-  font-size: 4rem;
+  font-size: 4vh;
   text-transform: uppercase;
   letter-spacing: 1px;
   word-spacing: 2px;
   font-weight: 300;
-  margin-bottom: 1rem;
+  margin-bottom: 1vh;
 }
 
 .score {
-  font-size: 8rem;
+  font-size: 8vh;
   font-weight: 300;
   color: #09108c;
   margin-bottom: auto;
@@ -83,20 +83,20 @@ main {
   border-radius: 9px;
   color: #fff;
   width: 65%;
-  padding: 2rem;
+  padding: 2vh;
   text-align: center;
   transition: all 0.75s;
 }
 
 .current-label {
   text-transform: uppercase;
-  margin-bottom: 1rem;
-  font-size: 2rem;
+  margin-bottom: 1vh;
+  font-size: 2vh;
   color: #ddd;
 }
 
 .current-score {
-  font-size: 4.5rem;
+  font-size: 4.5vh;
 }
 
 /* ABSOLUTE POSITIONED ELEMENTS */
@@ -108,7 +108,7 @@ main {
   background: none;
   border: none;
   font-family: inherit;
-  font-size: 1.8rem;
+  font-size: 1.8vh;
   text-transform: uppercase;
   cursor: pointer;
   font-weight: 400;
@@ -118,30 +118,30 @@ main {
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(10px);
 
-  padding: 0.7rem 2.5rem;
-  border-radius: 50rem;
-  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+  padding: 0.7vh 2.5vh;
+  border-radius: 50vh;
+  box-shadow: 0 1.75vh 3.5vh rgba(0, 0, 0, 0.1);
 }
 
 .btn::first-letter {
-  font-size: 2.4rem;
+  font-size: 2.4vh;
   display: inline-block;
-  margin-right: 0.7rem;
+  margin-right: 0.7vh;
 }
 
 .btn--new {
-  top: 4rem;
+  top: 4vh;
 }
 .btn--roll {
-  top: 39.3rem;
+  top: 65%;
 }
 .btn--hold {
-  top: 46.1rem;
+  top: 75%;
 }
 
 .btn:active {
   transform: translate(-50%, 3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.15);
 }
 
 .btn:focus {
@@ -151,10 +151,10 @@ main {
 .dice {
   position: absolute;
   left: 50%;
-  top: 16.5rem;
+  top: 40%;
   transform: translateX(-50%);
-  height: 10rem;
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+  height: 10vh;
+  box-shadow: 0 2vh 5vh rgba(0, 0, 0, 0.2);
 }
 
 .player--winner {
