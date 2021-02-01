@@ -38,6 +38,8 @@ const init = function () {
   player1El.classList.remove('player--active');
   currentScore0.classList.remove('hidden');
   currentScore1.classList.remove('hidden');
+  nameContainer[0].textContent = 'PLAYER 1';
+  nameContainer[1].textContent = 'PLAYER 2';
 };
 
 init();
